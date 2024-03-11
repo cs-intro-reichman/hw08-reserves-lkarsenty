@@ -23,9 +23,10 @@ class RuniFi {
         // Displays the list
         display("My list", myList);
 
+       
         // Displays the total duration
         System.out.println("\nTotal time duration of my list (in seconds):" + myList.totalDuration());
-
+  
         // Inserts a track to some location
         myList.add(1, track5);
         display("After adding Yesterday at location 1", myList);
@@ -66,7 +67,8 @@ class RuniFi {
         // Sorts the list 
         myList.sortedInPlace();
         display("My list after sorting by increasing duration", myList);
-    }
+  
+ }
 
     private static void display(String str, PlayList list) {
         System.out.println("\n" + str + ":" + list);
