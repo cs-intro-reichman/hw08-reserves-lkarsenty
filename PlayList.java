@@ -100,7 +100,7 @@ class PlayList {
             return false;
         }
 
-        for (int t = this.size + 1;t >= i; t--) {
+        for (int t = this.size;t >= i; t--) {
             this.tracks[t + 1] = this.tracks[t];
         }
         this.tracks[i] = track;
